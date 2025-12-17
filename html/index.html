@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Apex - Company Profile</title>
-    <link rel="stylesheet" href="styles.css">
-    <link rel="icon" href="icon/iconweb.png">
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="icon" href="../icon/iconweb.png">
 </head>
 <body>
     <!-- Navigation -->
@@ -25,14 +25,14 @@
                     <li><a href="#portfolio">Portofolio</a></li>
                     <li><a href="project.html">Proyek</a></li>
                     <li><a href="blog.html">Blog</a></li>
-                    <li><a href="#contact">Kontak</a></li>
+                    <li><a href="contact.html">Kontak</a></li>
                     <li>
                         <button class="theme-toggle" aria-label="Toggle dark mode">
                             <span class="sun-icon">&#9728;</span>
                             <span class="moon-icon">&#9790;</span>
                         </button>
                     </li>
-                    <li><a href="404.html" class="cart-icon">&#128722;</a></li>
+                    <li><a href="404.html" class="cart-icon"></a></li>
                 </ul>
             </div>
         </div>
@@ -46,7 +46,7 @@
                 <div class="hero-line"></div>
                 <h1 class="hero-title">APEX <br></h1>
                 <p class="hero-description">Mitra tepercaya Anda dalam konstruksi yang inovatif. Kami membangun bukan hanya struktur, tetapi juga warisan yang kokoh dan berkelanjutan.</p>
-                <button class="btn btn-primary">Lihat Proyek Kami</button>
+                <button class="btn btn-primary" onclick="window.open('project.html')">Projek Kami</button>
             </div>
         </div>
     </section>
@@ -148,6 +148,10 @@
         <div class="container">
             <div class="features-wrapper">
                 <div class="features-left">
+                    <div class="vision-header">
+                        <h3 class="vision-title">VISI &amp; MISI</h3>
+                        <p class="vision-text">Visi kami memimpin konstruksi berkelanjutan dan presisi di Indonesia. Misi kami hadir lewat tiga pilar utama berikut.</p>
+                    </div>
                     <div class="feature-item">
                         <div class="feature-icon">»</div>
                         <div class="feature-content">
@@ -186,7 +190,7 @@
         <div class="container">
             <div class="cta-content">
                 <h2>Dapatkan Konsultasi Gratis</h2>
-                <button class="btn btn-outline">FORUM ONLINE</button>
+                <button class="btn btn-outline" onclick="window.open('contact.html#contact-hero')">FORUM ONLINE</button>
             </div>
         </div>
     </section>
@@ -204,7 +208,7 @@
                     <div class="project-content">
                         <h3>Pusat Rekayasa Dharma</h3>
                         <p>Proyek pembangunan pusat penelitian dan pengembangan teknologi. Memerlukan presisi tinggi dalam pemasangan struktur baja dan sistem utilitas pintar.</p>
-                        <button class="btn-link">LIHAT PROJEK</button>
+                        <button class="btn-link" onclick="window.open('project-detail.html')">LIHAT PROJEK</button>
                     </div>
                 </div>
                 <div class="project-card">
@@ -214,7 +218,7 @@
                     <div class="project-content">
                         <h3>Menara Korporat Veridian</h3>
                         <p>Pembangunan skycraper 40 lantai di pusat kota. Proyek ini menonjolkan desain fasad kaca modern dan fondasi yang tahan gempa.</p>
-                        <button class="btn-link">LIHAT PROJEK</button>
+                        <button class="btn-link" onclick="window.open('project-detail-1.html')">LIHAT PROJEK</button>
                     </div>
                 </div>
                 <div class="project-card">
@@ -224,11 +228,12 @@
                     <div class="project-content">
                         <h3>Kawasan Industri Cakra</h3>
                         <p>Proyek site management dan pembangunan infrastruktur untuk komplek industri seluas 50 hektar, termasuk jalan akses dan gudang modular.</p>
-                        <button class="btn-link">LIHAT PROJEK</button>
+                        <button class="btn-link" onclick="window.open('project-detail-2.html')">LIHAT PROJEK</button>
                     </div>
                 </div>
             </div>
-            <button class="btn btn-outline-dark">Lihat Semuanya</button>
+            
+            <button class="btn btn-outline-dark" onclick="window.open('project.html')">Lihat Semuanya</button>
         </div>
     </section>
 
@@ -258,20 +263,20 @@
                     <h3>Hubungi Kami Sekarang</h3>
                     <p class="phone">(211) 881-0111</p>
                 </div>
-                <button class="btn btn-outline">FORMULIR ESTIMASI ONLINE</button>
+                <button class="btn btn-outline" onclick="window.open('contact.html#contact-hero')">FORMULIR ESTIMASI ONLINE</button>
             </div>
         </div>
     </section>
 
     <!-- FAQ Section -->
-    <section class="faq">
+    <section class="faq" id="faq">
         <div class="container">
             <div class="faq-wrapper">
                 <div class="faq-content">
                     <h2>Mari Kita Bangun Sesuatu Bersama</h2>
                     <div class="divider"></div>
                     <p>Apakah Anda memiliki visi proyek konstruksi atau rekayasa? Tim ahli Apex siap membantu Anda mewujudkan rencana tersebut dari tahap awal hingga penyerahan kunci. Hubungi kami untuk konsultasi awal tanpa kewajiban.</p>
-                    <button class="btn btn-outline">HUBUNGI KAMI</button>
+                    <button class="btn btn-outline" onclick="window.open('contact.html#contact-hero')">HUBUNGI KAMI</button>
                 </div>
                 <div class="faq-list">
                     <div class="faq-item">
@@ -355,57 +360,68 @@
             <h2 class="section-title">OUR PARTNERSHIP</h2>
             <div class="divider-center"></div>
             <div class="partners-grid">
-                <div class="partner-logo"><img src="PartnerLogo/asahimas-removebg-preview.png" alt=""></div>
-                <div class="partner-logo"><img src="PartnerLogo/b1-removebg-preview.png" alt=""></div>
-                <div class="partner-logo"><img src="PartnerLogo/ciputra-removebg-preview.png" alt=""></div>
-                <div class="partner-logo"><img src="PartnerLogo/krakatau-removebg-preview.png" alt=""></div>
-                <div class="partner-logo"><img src="PartnerLogo/semen3roda-removebg-preview.png" alt=""></div>
-                <div class="partner-logo"><img src="PartnerLogo/solusibangun-removebg-preview.png" alt=""></div>
-                <div class="partner-logo"><img src="PartnerLogo/majubersama-removebg-preview.png" alt=""></div>
-                <div class="partner-logo"><img src="PartnerLogo/summarecon-removebg-preview.png" alt=""></div>
+                <div class="partner-logo"><img src="../PartnerLogo/asahimas-removebg-preview.png" alt=""></div>
+                <div class="partner-logo"><img src="../PartnerLogo/b1-removebg-preview.png" alt=""></div>
+                <div class="partner-logo"><img src="../PartnerLogo/ciputra-removebg-preview.png" alt=""></div>
+                <div class="partner-logo"><img src="../PartnerLogo/krakatau-removebg-preview.png" alt=""></div>
+                <div class="partner-logo"><img src="../PartnerLogo/semen3roda-removebg-preview.png" alt=""></div>
+                <div class="partner-logo"><img src="../PartnerLogo/solusibangun-removebg-preview.png" alt=""></div>
+                <div class="partner-logo"><img src="../PartnerLogo/majubersama-removebg-preview.png" alt=""></div>
+                <div class="partner-logo"><img src="../PartnerLogo/summarecon-removebg-preview.png" alt=""></div>
             </div>
         </div>
     </section>
-
-    <!-- Contact Section -->
-    <section class="contact" id="contact">
+    <footer class="footer">
         <div class="container">
-            <div class="contact-wrapper">
-                <div class="contact-form-section">
-                    <h2>Contact Us</h2>
-                    <div class="divider"></div>
-                    <form class="contact-form">
-                        <input type="text" placeholder="Name" required>
-                        <input type="email" placeholder="Email" required>
-                        <textarea placeholder="Message" rows="5" required></textarea>
-                        <button type="submit" class="btn btn-outline">SEND MESSAGE</button>
-                    </form>
-                </div>
-                <div class="contact-info">
-                    <div class="social-links">
-                        <a href="#" aria-label="Facebook">f</a>
-                        <a href="#" aria-label="Twitter">𝕏</a>
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <h3 class="footer-logo">Apex Construction</h3>
+                    <p class="footer-desc">Membangun struktur berkualitas dengan tim yang berpengalaman lebih dari satu dekade. Kami fokus pada ketepatan waktu, keselamatan, dan hasil yang tahan lama.</p>
+                    <div class="footer-social">
                         <a href="#" aria-label="LinkedIn">in</a>
+                        <a href="#" aria-label="Instagram">ig</a>
+                        <a href="#" aria-label="YouTube">yt</a>
                     </div>
-                    <div class="contact-details">
-                        <div class="contact-item">
-                            <span class="icon">📍</span>
-                            <p>Pegangsaan Dua,Kec.Klp.Gading,Jkt Utara,Daerah Khusus Ibukota Jakarta</p>
-                        </div>
-                        <div class="contact-item">
-                            <span class="icon">📞</span>
-                            <p>+62 881 0111 53399</p>
-                        </div>
-                        <div class="contact-item">
-                            <span class="icon">✉️</span>
-                            <p>Apex@construction.com</p>
-                        </div>
-                    </div>
+                </div>
+                <div class="footer-links">
+                    <h4>Perusahaan</h4>
+                    <ul>
+                        <li><a href="#about">Tentang Kami</a></li>
+                        <li><a href="project.html">Portofolio</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                        <li><a href="#faq">FAQ</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h4>Layanan</h4>
+                    <ul>
+                        <li><a href="#services">Konstruksi</a></li>
+                        <li><a href="#services">Perbaikan & Renovasi</a></li>
+                        <li><a href="#services">Pembongkaran</a></li>
+                        <li><a href="#services">Manajemen Lokasi</a></li>
+                    </ul>
+                </div>
+                <div class="footer-contact">
+                    <h4>Hubungi Kami</h4>
+                    <ul>
+                        <li>Jl. Sudirman No. 123, Jakarta</li>
+                        <li>Telp: (211) 881-0111</li>
+                        <li>Email: info@apexconstruction.id</li>
+                    </ul>
+                    <a class="btn btn-outline footer-cta" href="contact.html">KONSULTASI GRATIS</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>© 2025 Apex Construction. Semua hak dilindungi.</p>
+                <div class="footer-bottom-links">
+                    <a href="#">Kebijakan Privasi</a>
+                    <span>•</span>
+                    <a href="#">Syarat & Ketentuan</a>
                 </div>
             </div>
         </div>
-    </section>
+    </footer>
 
-    <script src="script.js"></script>
+    <script src="../script.js"></script>
 </body>
 </html>

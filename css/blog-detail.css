@@ -458,8 +458,7 @@
 
 /* TOC Widget */
 .toc-widget {
-    position: sticky;
-    top: 80px;
+    position: static;
 }
 
 .toc-list {

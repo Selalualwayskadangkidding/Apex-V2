@@ -52,22 +52,19 @@ themeToggle.addEventListener('click', () => {
     }, 300);
 });
 
-// FAQ Accordion
-const faqItems = document.querySelectorAll('.faq-item');
+// FAQ Accordion (works for both grid and list layouts)
+document.querySelectorAll('.faq-grid, .faq-list').forEach(list => {
+    const items = list.querySelectorAll('.faq-item');
+    items.forEach(item => {
+        const question = item.querySelector('.faq-question');
+        if (!question) return;
 
-faqItems.forEach(item => {
-    const question = item.querySelector('.faq-question');
-    
-    question.addEventListener('click', () => {
-        // Close all other items
-        faqItems.forEach(otherItem => {
-            if (otherItem !== item) {
-                otherItem.classList.remove('active');
-            }
+        question.addEventListener('click', () => {
+            items.forEach(other => {
+                if (other !== item) other.classList.remove('active');
+            });
+            item.classList.toggle('active');
         });
-        
-        // Toggle current item
-        item.classList.toggle('active');
     });
 });
 
